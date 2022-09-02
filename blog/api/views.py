@@ -15,7 +15,7 @@ class ArticleViewSet(viewsets.ModelViewSet):
             permission_classes = [AllowAny]
         elif self.action == 'create':
             permission_classes = [IsAuthenticated]
-        elif self.action in ['update', 'delete']:
+        elif self.action in ['update', 'destroy']:
             permission_classes = [IsArticleOrIsAdmin]
         else:
             permission_classes = []
@@ -34,7 +34,7 @@ class CommentViewSet(viewsets.ModelViewSet):
             permission_classes = [AllowAny]
         elif self.action == 'create':
             permission_classes = [IsAuthenticated]
-        elif self.action in ['update', 'delete']:
+        elif self.action in ['update', 'destroy']:
             permission_classes = [IsOwnerOrIsAdmin]
         else:
             permission_classes = []

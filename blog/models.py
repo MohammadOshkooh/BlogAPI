@@ -8,7 +8,7 @@ class Article(models.Model):
     Article model
     """
     title = models.CharField(max_length=500)
-    author = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
+    author = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, related_name='posts')
     created = models.DateTimeField(auto_now_add=True)
     body = models.TextField()
 
