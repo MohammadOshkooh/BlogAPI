@@ -40,7 +40,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-The app will start running at <http://localhost:8080>
+The app will start running at <http://localhost:8000>
 
 ## Explore Rest APIs
 
