@@ -1,3 +1,19 @@
+<h3> 
+⭐  Technologies used in blog api
+</h3>
+
+<ul>
+  <li>Django</li>
+  <li>Python</li>
+  <li>Django rest framework</li>
+  <li>Django allauth</li>
+  <li>Dj rest auth</li>
+  <li>JWT cookie authentication</li>
+
+
+
+</ul>
+
 ## Steps to Setup
 
 **1. Clone the application**
